@@ -77,7 +77,7 @@ secrets = {
         "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
         "client_secret": GOOGLE_CLIENT_SECRET,
         "redirect_uris": [
-            "https://rocky-basin-61067.herokuapp.com/auth/google/callback",
+            "https://mealdeck.onrender.com/auth/google/callback",
             "http://127.0.0.1:5000/callback",
         ],
     }
@@ -98,7 +98,7 @@ flow = Flow.from_client_secrets_file(
     # For local deployment, use this line of code:
     # redirect_uri="http://127.0.0.1:5000/callback",
     # For heroku deployment, use this redirect_uri
-    redirect_uri="https://rocky-basin-61067.herokuapp.com/callback",
+    redirect_uri="https://mealdeck.onrender.com/callback",
 )
 
 
